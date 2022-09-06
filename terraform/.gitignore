@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1de2ff891c58ba1b89e74da30e94c5372f942b45
 **/.terraform/*
 
 *.tfstate
