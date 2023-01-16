@@ -6,7 +6,7 @@
 <br><b>Задание 2. </b> <br>
 Порог входа в Ansible очень низкий, он прост и удобен. Ещё одним преимуществом является простота и расширяемость. <br> Pull, потому что отсутствует единая точка отказа и хранения данных для доступа. <br>
 <br><b>Задание 3. </b> <br>
-![VBox version](https://github.com/RoadMania/netology_git/blob/main/VBox.JPG)
+![VBox version](https://github.com/RoadMania/netology_git/blob/main/screens/VBox.JPG)
 <br>
 <br>
 <br>
