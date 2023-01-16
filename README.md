@@ -6,7 +6,20 @@
 <br><b>Задание 2. </b> <br>
 Порог входа в Ansible очень низкий, он прост и удобен. Ещё одним преимуществом является простота и расширяемость. <br> Pull, потому что отсутствует единая точка отказа и хранения данных для доступа. <br>
 <br><b>Задание 3. </b> <br>
-![VBox version](https://github.com/RoadMania/netology_git/blob/main/screens/VBox.JPG)
+![VBox version](https://github.com/RoadMania/netology_git/blob/main/screens/VBox.JPG) <br> <br>
+spenc@bogatov:~$ vagrant -v <br>
+Vagrant 2.2.14<br>
+
+ spenc@bogatov:~$ ansible --version <br>
+ansible 2.10.8<br>
+  config file = None<br>
+  configured module search path = ['/home/spenc/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']<br>
+  ansible python module location = /usr/lib/python3/dist-packages/ansible<br>
+  executable location = /usr/bin/ansible<br>
+  python version = 3.9.2 (default, Feb 28 2021, 17:03:44) [GCC 10.2.1 20210110]<br>
+
+
+
 <br>
 <br>
 <br>
