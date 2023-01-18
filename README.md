@@ -14,15 +14,21 @@ https://hub.docker.com/r/spencer98/netology <br>
  <li> MongoDB, как основное хранилище данных для java-приложения; -  можем воспользоваться всеми тремя вариантами. </li>
  <li> Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry -  Gitlab можем исползовать в любых трёх вариантах, а Docker Registry с самого начала поставляется в контейнере. </li>
 </ul>
-<br><b>Задание 3. </b> <br> <br>
-![docker](https://github.com/RoadMania/netology_git/blob/main/screens/docker%20ps.JPG) <br> <br>
+<br><b>Задание 3. </b> <br>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/docker.JPG"> </div> 
+<br>
+<br>
+<br>
+<br>
+<br>
 05-virt-02-iaac <br>
 <b>Задание 1. </b><br>
 Основным преимуществом подхода IaaC является "быстрая и эффективная разработка", "Стабильность среды, устранение дрейфа конфигураций" и "Ускорение производства и вывода продукта на рынок". <b>Главным</b> преимуществом IaaC является идемпотентность. <br>
 <br><b>Задание 2. </b> <br>
 1)Порог входа в Ansible очень низкий, он прост и удобен. Плюсом является еще то, Ansible использует существующую SSH инфраструктуру, в то время как другие требуют установки специального PKI-окружения. <br> 2)Pull, потому что отсутствует единая точка отказа и хранения данных для доступа. <br>
 <br><b>Задание 3. </b> <br>
-![VBox version](https://github.com/RoadMania/netology_git/blob/main/screens/VBox.JPG) <br> <br>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/VBox.JPG"> </div> 
+<br> <br>
 spenc@bogatov:~$ vagrant -v <br>
 Vagrant 2.2.14<br>
 
