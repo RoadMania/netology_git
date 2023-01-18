@@ -14,7 +14,7 @@ https://hub.docker.com/r/spencer98/netology <br>
  <li> MongoDB, как основное хранилище данных для java-приложения; -  можем воспользоваться всеми тремя вариантами. </li>
  <li> Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry -  Gitlab можем исползовать в любых трёх вариантах, а Docker Registry с самого начала поставляется в контейнере. </li>
 </ul>
-<br><b>Задание 3. </b> <br>
+<br><b>Задание 3. </b> <br> <br>
 
 05-virt-02-iaac <br>
 <b>Задание 1. </b><br>
@@ -33,9 +33,6 @@ ansible 2.10.8<br>
   ansible python module location = /usr/lib/python3/dist-packages/ansible<br>
   executable location = /usr/bin/ansible<br>
   python version = 3.9.2 (default, Feb 28 2021, 17:03:44) [GCC 10.2.1 20210110]<br>
-
-
-
 <br>
 <br>
 <br>
