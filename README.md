@@ -2,7 +2,7 @@
 
 05-virt-03-docker <br>
 <b>Задание 1. </b><br>
-https://hub.docker.com/r/spencer98/netology <br>
+https://hub.docker.com/repository/docker/spencer98/netology_nginx <br>
 <br><b>Задание 2. </b> <br>
 <ul>
 <li> Высоконагруженное монолитное java веб-приложение -  учитывая что приложение монолитное, его лучше разместить на физической машине. </li>
