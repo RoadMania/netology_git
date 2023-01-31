@@ -1,5 +1,27 @@
 БОГАТОВ АЛЕКСЕЙ
 
+05-virt-04-docker-compose <br>
+<b>Задание 1. </b><br>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/packer_terminal.JPG"> </div>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/packer.JPG"> </div>
+<br><b>Задание 2. </b>
+<ul>
+<li> Высоконагруженное монолитное java веб-приложение -  учитывая что приложение монолитное, его лучше разместить на физической машине. </li>
+<li> Nodejs веб-приложение - контейнеризация, т.к. снижает трудозатраты на деплой приложения и организацию микросервисной архитектуры </li>
+<li> Мобильное приложение c версиями для Android и iOS - физические сервера или фиртуальные, потому что нам нужно работать с интерфейлом, а контейнеризация не сможет этого предоставить. </li> 
+<li> Шина данных на базе Apache Kafka -  брокеров лучше размещать на вирт. машинах </li>
+ <li> Elasticsearch кластер для реализации логирования продуктивного веб-приложения - три ноды elasticsearch, два logstash и две ноды kibana;  -  некоторые функции подразумевают использование хостов, так что используем виртуальную машину, либо контейнер. </li>
+ <li> Мониторинг-стек на базе Prometheus и Grafana; -  Для облегчения развётывания будем исползовать виртуальную машину или контейнер. </li>
+ <li> MongoDB, как основное хранилище данных для java-приложения; -  можем воспользоваться всеми тремя вариантами. </li>
+ <li> Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry -  Gitlab можем исползовать в любых трёх вариантах, а Docker Registry с самого начала поставляется в контейнере. </li>
+</ul>
+<br><b>Задание 3. </b> <br>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/docker.JPG"> </div> 
+<br>
+<br>
+<br>
+<br>
+<br>
 05-virt-03-docker <br>
 <b>Задание 1. </b><br>
 https://hub.docker.com/repository/docker/spencer98/netology_nginx <br>
