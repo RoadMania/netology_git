@@ -6,7 +6,9 @@
 + [05-virt-03-docker](#virt03); <br>
 + [05-virt-04-docker-compose](#virt04); <br>
 + [05-virt-05-docker-swarm](#virt05); <br>
-<br> <br>
+<br> 
+<div> <img src=https://github.com/RoadMania/netology_git/blob/main/screens/line.png> </div>
+<br>
 <a name="virt05"></a> 05-virt-05-docker-swarm<br>
 <b>Задание 1. </b><br>
 1) Для реплицируемой службы указывается количество идентичных задач, которые необходимо запустить.
