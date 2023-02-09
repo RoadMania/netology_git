@@ -3,10 +3,11 @@
 1. Содержание
 + [05-virt-01-basics](#virt01); <br>
 + [05-virt-02-iaac](#virt02); <br>
-
-
++ [05-virt-03-docker](#virt03); <br>
++ [05-virt-04-docker-compose](#virt04); <br>
++ [05-virt-05-docker-swarm](#virt05); <br>
 <br> <br>
-05-virt-05-docker-swarm<br>
+<a name="virt05"></a> 05-virt-05-docker-swarm<br>
 <b>Задание 1. </b><br>
 1) Для реплицируемой службы указывается количество идентичных задач, которые необходимо запустить.
 Глобальная служба запускает одну задачу на каждом узле. Заранее заданного количества заданий нет. Каждый раз, когда добавляется узел в swarm, оркестратор создает задачу, а планировщик назначает задачу новому узлу.
@@ -23,7 +24,7 @@
 <br>
 <br>
 <br>
-05-virt-04-docker-compose <br>
+<a name="virt04"></a> 05-virt-04-docker-compose <br>
 <b>Задание 1. </b><br>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/packer_terminal.JPG"> </div>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/packer.JPG"> </div>
@@ -34,7 +35,7 @@
 <br>
 <br>
 <br>
-05-virt-03-docker <br>
+<a name="virt03"></a> 05-virt-03-docker <br>
 <b>Задание 1. </b><br>
 https://hub.docker.com/repository/docker/spencer98/netology_nginx <br>
 <br><b>Задание 2. </b> <br>
