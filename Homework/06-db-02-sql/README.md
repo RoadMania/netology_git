@@ -45,7 +45,47 @@ WHERE table_schema NOT IN ('information_schema','pg_catalog');
 ```
 Список пользователей с правами над таблицами test_db можно получить таким же запросом, как выше. </br> </br>
 <b>Задание 3. </b> <br>
-<div> Это взаимоисключающие принципы. Например, ACID гарантирует консистентность данных после транзакции, BASE же допускает возврат неверных данных. </div>
+```
+INSERT INTO orders (name,price) VALUES
+('Шоколад',10),
+('Принтер',3000),
+('Книга',500),
+('Монитор',7000),
+('Гитара',4000);
+INSERT 0 5
+```
+```
+INSERT INTO clients (fullname,country) VALUES
+('Иванов Иван Иванович','USA'),
+('Петров Петр Петрович','Canada'),
+('Иоганн Себастьян Бах','Japan'),
+('Ронни Джеймс Дио','Russia'),
+('Ritchie Blackmore','Russia');
+INSERT 0 5
+```
 <br><b>Задание 4. </b> <br>
-<div> Думаю, речь про Redis. Redis - БД с высокой производительностью за счет хранения данных в памяти. Минус здесь в том, что мы можем потерять свои данные, если система не успеет их сохранить   </div>
+Для выполнения этой залачи я создал дополнительный столбец <b> order_id </b>
+```
+UPDATE clients
+SET order_id = (SELECT id FROM orders WHERE name = 'Книга')
+WHERE fullname = 'Иванов Иван Иванович';
+
+UPDATE clients
+SET order_id = (SELECT id FROM orders WHERE name = 'Монитор')
+WHERE fullname = 'Петров Петр Петрович';
+
+UPDATE clients
+SET order_id = (SELECT id FROM orders WHERE name = 'Гитара')
+WHERE fullname = 'Иоганн Себастьян Бах';
+```
+```
+select * from clients;
+ id |       fullname       | country |  order_id
+----+----------------------+---------+----------
+  9 | Ронни Джеймс Дио     | Russia  |
+ 10 | Ritchie Blackmore    | Russia  |
+  6 | Иванов Иван Иванович | USA     |        3
+  7 | Петров Петр Петрович | Canada  |        4
+  8 | Иоганн Себастьян Бах | Japan   |        5
+```
 
