@@ -1,25 +1,7 @@
 <a name="db1"></a> 06-db-02-sql <br>
 <b>Задание 1. </b><br>
 ```
-version: "3.9"
-
-volumes:
-  postgressql_data:  
-  backup_postgressql_data:
-
-services:
-  
-  postgressql:
-    image: postgres:12-bullseye 
-    container_name: postgressql
-    environment:
-      - PGDATA=/var/lib/postgresql/data/
-      - POSTGRES_PASSWORD=123456
-    volumes:
-      - postgressql_data:/var/lib/postgresql/data
-      - backup_postgressql_data:/backup
-      - ./config:/docker-entrypoint-initdb.d
-    network_mode: "host"
+docker run --name postgre1 -d -e POSTGRES_HOST_AUTH_METHOD=trust -v 'C:\Users\spenc\docker\06-sql:/var/lib/postgresql/data' -v 'C:\Users\spenc\docker\06-sql-backup:/tmp/backup' postgres:12
 ```
 <b>Задание 2. </b> <br>
 Итоговый список БД с описанием: 
@@ -64,7 +46,7 @@ INSERT INTO clients (fullname,country) VALUES
 INSERT 0 5
 ```
 <br><b>Задание 4. </b> <br>
-Для выполнения этой залачи я создал дополнительный столбец <b> order_id </b>
+Для выполнения этой задачи я создал дополнительный столбец <b> order_id </b>
 ```
 UPDATE clients
 SET order_id = (SELECT id FROM orders WHERE name = 'Книга')
@@ -88,4 +70,35 @@ select * from clients;
   7 | Петров Петр Петрович | Canada  |        4
   8 | Иоганн Себастьян Бах | Japan   |        5
 ```
-
+<br><b>Задание 5. </b> <br>
+```
+EXPLAIN select * from clients;
+--------------------------------------------------------
+ Seq Scan on clients  (cost=0.00..1.05 rows=5 width=47)
+(1 row)
+```
+Seq Scan — используется последовательное чтение данных. </br>
+Cost - оценивается время и использование ресурсов.</br>
+rows — приблизительное количество возвращаемых строк</br>
+width - сколько в среднем байт содержится в одной строке.</br>
+<br><b>Задание 6. </b> <br>
+Роли:
+```
+docker exec -it postgre1 pg_dumpall -U postgres --roles-only -f /tmp/backup/roles.sql
+```
+База:
+```
+docker exec -it postgre1 pg_dump -h localhost -U postgres -F t -f /tmp/backup/backup_1.tar test_db
+```
+Запуск нового контейнера:
+```
+docker run --name postgre2 -d -e POSTGRES_HOST_AUTH_METHOD=trust -v 'C:\Users\spenc\docker\06-sql-2:/var/lib/postgresql/data' -v 'C:\Users\spenc\docker\06-sql-backup:/tmp/backup' postgres:12
+```
+Создаём базу:
+```
+docker exec -it postgre2 psql -U postgres -c "CREATE DATABASE test_db WITH ENCODING='UTF-8';"
+```
+Восстанавливаем базу из бэкапа:
+```
+docker exec -it postgre2 pg_restore -U postgres -Ft -v -d test_db /tmp/backup/backup_1.tar
+```
