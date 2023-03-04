@@ -39,3 +39,24 @@ mysql> show table status\G
            Name: orders
          Engine: InnoDB
 ```
+```
+mysql> SHOW PROFILES;
++----------+------------+----------------------------------+
+| Query_ID | Duration   | Query                            |
++----------+------------+----------------------------------+
+|       11 | 0.09740925 | ALTER TABLE orders ENGINE=MyISAM |
+|       12 | 0.11446900 | ALTER TABLE orders ENGINE=InnoDB |
++----------+------------+----------------------------------+
+2 rows in set, 1 warning (0.00 sec)
+```
+<b>Задание 4. </b><br>
+```
+innodb_file_per_table=1
+innodb_log_buffer_size=1M
+innodb_buffer_pool_size=2,4G
+innodb_log_file_size=100M
+innodb_flush_method = O_DIRECT # Чтобы избежать двойного кэширования — самим MySQL и операционной системой
+tmpdir = /dev/shm
+table_cache = 4096
+table_definition_cache = 4096
+```
