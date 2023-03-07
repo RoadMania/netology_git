@@ -65,7 +65,7 @@ INSERT 0 8
 COMMIT
 ```
 <br><b>Задание 4. </b> <br>
-Чтобы добавить уникальность значения, можно использовать UNIQUE 
+Чтобы добавить уникальность, можно использовать UNIQUE 
 ```
 pg_dump -d test_database > /backup/db_dump.sql
 ```
