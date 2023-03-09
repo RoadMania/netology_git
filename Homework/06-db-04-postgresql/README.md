@@ -67,5 +67,9 @@ COMMIT
 <br><b>Задание 4. </b> <br>
 Чтобы добавить уникальность, можно использовать UNIQUE 
 ```
-pg_dump -d test_database > /backup/db_dump.sql
+CREATE TABLE public.orders (
+    id integer NOT NULL,
+    title character varying(80) NOT NULL UNIQUE,
+    price integer DEFAULT 0
+);
 ```
