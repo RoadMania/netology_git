@@ -67,9 +67,8 @@ COMMIT
 <br><b>Задание 4. </b> <br>
 Чтобы добавить уникальность, можно использовать UNIQUE 
 ```
-CREATE TABLE public.orders (
-    id integer NOT NULL,
-    title character varying(80) NOT NULL UNIQUE,
-    price integer DEFAULT 0
-);
+create table orders_new (
+        id integer NOT NULL,
+        title varchar(80) NOT NULL UNIQUE,
+        price integer) partition by range(price);
 ```
