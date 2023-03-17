@@ -1,6 +1,6 @@
 <a name="virt02"></a> 07-terraform-01-intro <br>
 <div> Установка Terraform </div>
-<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform1.JPG"> </div> 
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform1.JPG"> </div> <br>
 <b>Задание 1. </b><br>
 Основным преимуществом подхода IaaC является "быстрая и эффективная разработка", "Стабильность среды, устранение дрейфа конфигураций" и "Ускорение производства и вывода продукта на рынок". <b>Главным</b> преимуществом IaaC является идемпотентность. <br>
 <br><b>Задание 2. </b> <br>
