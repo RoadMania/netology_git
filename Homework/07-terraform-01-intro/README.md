@@ -6,4 +6,5 @@
 3. <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_pass.JPG"> </div> <br>
 4. Первая ошибка говорит нам о том, что в блоке с ресурсами должно быть 2 лейбла (тип и имя). А у нас указан только тип. <br>
 Решение: <b>resource "docker_image" "nginx_image" { </b> <br>
-Вторая ошибка возникла из-за того, что имя в ресурсной группе начиналось с цифры. Достаточно убрать её и проблема исчезнет.
+Вторая ошибка возникла из-за того, что имя в ресурсной группе начиналось с цифры. Достаточно убрать её и проблема исчезнет. <br>
+5. <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_dockerPS.JPG"> </div>
