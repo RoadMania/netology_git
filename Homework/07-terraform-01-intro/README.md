@@ -3,3 +3,5 @@
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform1.JPG"> </div> <br>
 <b>Задание 1. </b><br>
 <div> 2. Личные данные не нужно хранить ни в каком из файлов. Это не безопасно. </div>
+3. <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_pass.JPG"> </div> <br>
+4. 
