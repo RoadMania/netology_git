@@ -11,4 +11,4 @@
 5. <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_dockerPS.JPG"> </div>
 6. Флаг <b> -auto-approve </b> пропускает подтверждение пользователя, перед применением изменений. Если вы где-то ошиблись или конфигурация была исправлена извне - использование этого флага может поломать инфраструктуру и создать конфликтные ситуации.
 7. <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_tfstate.JPG"> </div>
-8. 
+8. Образ nginx не был удалён потому что в коде мы использовали <b> keep_locally </b> параметр, который позволяет хранить образа локально.
