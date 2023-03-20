@@ -3,7 +3,7 @@
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform1.JPG"> </div> <br>
 <b>Задание 1. </b><br>
 1. Скачал репозиторий.
-<div> 2. Личные данные не нужно хранить в открытых репозиториях. Это не безопасно. Однако личные данные можно хранить в файлах, которые были добавлены в .gitignore в секцию <b>own secret vars store</b>. В нашем случае это будет .terraform.lock.hcl файл.</div>
+<div> 2. Личные данные не нужно хранить в открытых репозиториях. Это не безопасно. Однако личные данные можно хранить в файлах, которые были добавлены в .gitignore в секцию "own secret vars store". Это будет конфиг с расширением <b>.tfvars</b> в котором и будут содержаться секреты.</div>
 3. <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_pass.JPG"> </div> <br>
 4. Первая ошибка говорит нам о том, что в блоке с ресурсами должно быть 2 лейбла (тип и имя). А у нас указан только тип. <br>
 Решение: <b>resource "docker_image" "nginx_image" { </b> <br>
