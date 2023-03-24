@@ -8,6 +8,6 @@
 <b>core_fraction</b> - уровни производительности vCPU. Этот уровень определяет долю вычислительного времени физических ядер, которую гарантирует vCPU.<br><br>
 <b>Задание 2. </b><br>
 1,2,3,4) <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_vars.JPG"> </div>
-<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_vars_plan.JPG"> </div>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_vars_plan.JPG"> </div><br>
 <b>Задание 3. </b><br>
-1,2,3) <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_vars.JPG"> </div>
+1,2,3) <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_VM2.JPG"> </div>
