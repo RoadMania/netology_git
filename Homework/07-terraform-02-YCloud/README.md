@@ -17,4 +17,7 @@
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_locals.JPG"> </div>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_locals_main.JPG"> </div>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_local_example.JPG"> </div><br>
-<b>Задание 6. </b>
+<b>Задание 6. </b> <br>
+<div> 1) </div>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_map.JPG"> </div>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_map2.JPG"> </div><br>
