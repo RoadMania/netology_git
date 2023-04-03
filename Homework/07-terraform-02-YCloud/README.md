@@ -21,3 +21,6 @@
 <div> 1) </div>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_map.JPG"> </div>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_map2.JPG"> </div><br>
+2) <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/terraform_variables_metadata.JPG"> </div><br>
+3) Поскольку для ssh ключа мы сделали отдельную переменную, то первоначальная переменная vms_ssh_root_key нам больше не нужна. <br><br>
+4) Изменений нет.
