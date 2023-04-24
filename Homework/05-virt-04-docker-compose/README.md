@@ -3,4 +3,5 @@
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/packer_terminal.JPG"> </div>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/packer.JPG"> </div>
 <br><b>Задание 2. </b>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/docker_compose_machine.JPG"> </div>
 <br><b>Задание 3. </b>
