@@ -6,3 +6,4 @@
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/docker-compose-YCmachine.JPG"> </div> <br>
 <br><b>Задание 3. </b>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/docker_compose_up.JPG"> </div> <br>
+<br><b>Задание 4. </b>
