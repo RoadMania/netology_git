@@ -85,4 +85,44 @@ Cостояние кластера elasticsearch: <br>
 ```
 Как вы думаете, почему часть индексов и кластер находятся в состоянии yellow? <br>
 Жёлтый цвет означает, что основной сегмент выделен, а реплики — нет. <br> <br>
+
 <b>Задание 3. </b> <br> <br>
+Запрос API и результат вызова API для создания репозитория: <br>
+
+```
+curl -X PUT "localhost:9200/_snapshot/netology_backup?pretty" -H 'Content-Type: application/json' -d'
+{
+  "type": "fs",
+  "settings": {
+    "location": "/var/lib/elasticsearch/snapshots",
+    "compress": true
+  }
+}'
+```
+
+Ответ:
+
+```
+{
+  "acknowledged" : true
+}
+```
+<br>
+Создайте индекс test с 0 реплик и 1 шардом и приведите в ответе список индексов. <br>
+
+```
+health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   .geoip_databases tUIEc-vfnED49ds_dsdfkj   1   0         42            0     41.1mb         41.1mb
+green  open   test             5okKcWHIfkcdodcsdpofjm   1   0          0            0       226b           226b
+```
+
+Cписок файлов в директории со snapshot:
+
+```
+-rw-r--r-- 1 elasticsearch elasticsearch 1434 Jun  2 18:22 index-0
+-rw-r--r-- 1 elasticsearch elasticsearch    8 Jun  2 18:22 index.latest
+drwxr-xr-x 6 elasticsearch elasticsearch 4096 Jun  2 18:22 indices
+-rw-r--r-- 1 elasticsearch elasticsearch 9737 Jun  2 18:22 meta-fzn6GSxgSX-JC9wHwIWhNA.dat
+-rw-r--r-- 1 elasticsearch elasticsearch  458 Jun  2 18:22 snap-fzn6GSxgSX-JC9wHwIWhNA.dat
+```
+
