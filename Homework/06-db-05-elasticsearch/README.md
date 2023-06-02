@@ -54,3 +54,35 @@ CMD ["sh", "-c", "${ES_HOME}/bin/elasticsearch"]
 <br>
 <b>Задание 2. </b> <br> <br>
 Cписок индексов и их статусов: <br>
+
+```
+  health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   .geoip_databases qwghBG1SjUIFv-rt-VJOPf   1   0         42            0     41.1mb         41.1mb
+green  open   ind-1            FEsd53efsvDffjd-sdkccl   1   0          0            0       226b           226b
+yellow open   ind-3            5cvjIOdjdd-oifdd-fKdjv   4   2          0            0       226b           226b
+yellow open   ind-2            7osdjDFD_qwExc-dKdcsdd   2   1          0            0       226b           226b
+```
+Cостояние кластера elasticsearch: <br>
+
+```
+  {
+  "cluster_name" : "elasticsearch",
+  "status" : "yellow",
+  "timed_out" : false,
+  "number_of_nodes" : 1,
+  "number_of_data_nodes" : 1,
+  "active_primary_shards" : 10,
+  "active_shards" : 10,
+  "relocating_shards" : 0,
+  "initializing_shards" : 0,
+  "unassigned_shards" : 10,
+  "delayed_unassigned_shards" : 0,
+  "number_of_pending_tasks" : 0,
+  "number_of_in_flight_fetch" : 0,
+  "task_max_waiting_in_queue_millis" : 0,
+  "active_shards_percent_as_number" : 50.0
+}
+```
+Как вы думаете, почему часть индексов и кластер находятся в состоянии yellow? <br>
+Жёлтый цвет означает, что основной сегмент выделен, а реплики — нет. <br> <br>
+<b>Задание 3. </b> <br> <br>
