@@ -99,7 +99,7 @@ curl -X PUT "localhost:9200/_snapshot/netology_backup?pretty" -H 'Content-Type: 
   }
 }'
 ```
-
+<br>
 Ответ:
 
 ```
@@ -115,7 +115,7 @@ health status index            uuid                   pri rep docs.count docs.de
 green  open   .geoip_databases tUIEc-vfnED49ds_dsdfkj   1   0         42            0     41.1mb         41.1mb
 green  open   test             5okKcWHIfkcdodcsdpofjm   1   0          0            0       226b           226b
 ```
-
+<br>
 Cписок файлов в директории со snapshot:
 
 ```
@@ -125,4 +125,29 @@ drwxr-xr-x 6 elasticsearch elasticsearch 4096 Jun  2 18:22 indices
 -rw-r--r-- 1 elasticsearch elasticsearch 9737 Jun  2 18:22 meta-fzn6GSxgSX-JC9wHwIWhNA.dat
 -rw-r--r-- 1 elasticsearch elasticsearch  458 Jun  2 18:22 snap-fzn6GSxgSX-JC9wHwIWhNA.dat
 ```
+<br>
+Удалите индекс test и создайте индекс test-2. Приведите в ответе список индексов.
 
+```
+health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   .geoip_databases tUIEc-vfnED49ds_dsdfkj   1   0         42            0     41.1mb         41.1mb
+green  open   test-2           5okKcWHIfkcdodcsdpofjm   1   0          0            0       226b           226b
+```
+<br>
+Запрос к API восстановления: <br>
+
+```
+curl -X POST "localhost:9200/_snapshot/netology_backup/my_snapshot_2021.12.12/_restore?pretty" -H 'Content-Type: application/json' -d'
+{
+  "indices": "*",
+  "include_global_state": false
+}
+```
+<br>
+Итоговый список индексов:
+
+```
+health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   .geoip_databases 7jTmq5GDFSY-41JntNJjlQ   1   0         42            0     41.1mb         41.1mb
+green  open   test             q4m25DMC-iplWaPW0VzwsQ   1   0          0            0       226b           226b
+```
