@@ -196,9 +196,6 @@ Vault password:
 PLAY [Print os facts] *********************************************************************************************************************************************************
 
 TASK [Gathering Facts] ********************************************************************************************************************************************************
-[WARNING]: Platform darwin on host localhost is using the discovered Python interpreter at /Users/mgnosov/devops-netology/venv/bin/python3.8, but future installation of
-another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.12/reference_appendices/interpreter_discovery.html for more
-information.
 ok: [localhost]
 ok: [ubuntu]
 ok: [centos7]
