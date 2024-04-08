@@ -8,3 +8,7 @@
 
 5) Перейдите в Scrum, запланируйте новый спринт, состоящий из задач эпика и одного бага, стартуйте спринт, проведите задачи до состояния Closed. Закройте спринт. <br>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/Jira3.JPG"> </div>
+
+6) Схемы workflow в XML: <br>
+- https://github.com/RoadMania/netology_git/blob/main/Misc/Software%20Simplified%20Workflow%20for%20Project%20NET.xml
+- https://github.com/RoadMania/netology_git/blob/main/Misc/Software%20Simplified%20Workflow%20for%20Project%20SKP.xml
