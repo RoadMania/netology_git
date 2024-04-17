@@ -1,13 +1,12 @@
 09-ci-03-cicd
 
 <b>Подготовка к выполнению</b> <br>
-
 4) Запустите playbook, ожидайте успешного завершения.
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd1.JPG"> </div>
 5) Проверьте готовность SonarQube через браузер
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_sonarcube1.JPG"> </div>
 7) Проверьте готовность Nexus через бразуер
-<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_nexus.JPG"> </div>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_nexus.JPG"> </div> <br>
 
 <b>Знакомоство с SonarQube</b> <br>
 1) Создайте новый проект, название произвольное. <br>
@@ -20,7 +19,7 @@
 8) Исправьте ошибки, которые он выявил, включая warnings.<br>
 9) Запустите анализатор повторно — проверьте, что QG пройдены успешно.<br>
 10) Сделайте скриншот успешного прохождения анализа, приложите к решению ДЗ.<br>
-<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_sonar2.jpg"> </div>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_sonar2.jpg"> </div> <br>
 <b>Знакомство с Nexus</b> <br>
 4) В ответе пришлите файл maven-metadata.xml для этого артефекта.
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_nexus2.JPG"> </div>
