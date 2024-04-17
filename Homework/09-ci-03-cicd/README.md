@@ -22,4 +22,12 @@
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_sonar2.jpg"> </div> <br>
 <b>Знакомство с Nexus</b> <br>
 4) В ответе пришлите файл maven-metadata.xml для этого артефекта.
-<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_nexus2.JPG"> </div>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_nexus2.JPG"> </div> <br>
+<b>Знакомство с Maven</b> <br>
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_maven1.JPG"> </div> <br>
+2) Запустите команду mvn package в директории с pom.xml, ожидайте успешного окончания.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_maven2.JPG"> </div> <br>
+3) Проверьте директорию ~/.m2/repository/, найдите ваш артефакт.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_maven3.JPG"> </div> <br>
+4) В ответе пришлите исправленный файл pom.xml.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_maven4.JPG"> </div> <br>
