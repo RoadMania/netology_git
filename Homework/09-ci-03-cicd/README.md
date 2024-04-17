@@ -21,3 +21,6 @@
 9) Запустите анализатор повторно — проверьте, что QG пройдены успешно.<br>
 10) Сделайте скриншот успешного прохождения анализа, приложите к решению ДЗ.<br>
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_sonar2.jpg"> </div>
+<b>Знакомство с Nexus</b> <br>
+4) В ответе пришлите файл maven-metadata.xml для этого артефекта.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd_nexus2.JPG"> </div>
