@@ -10,7 +10,7 @@
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd-jenkins3.JPG"> </div> <br>
 
 ```
-Started by user RoadMania
+Started by user bogatov
 [Pipeline] Start of Pipeline
 [Pipeline] node
 Running on agent in /opt/jenkins_agent/workspace/Declarative Pipeline Job
@@ -168,4 +168,4 @@ Finished: SUCCESS
 5) Создать Scripted Pipeline, наполнить его скриптом из pipeline.
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd-jenkins6.JPG"> </div> <br>
 
-6)
+6) Внести необходимые изменения, чтобы Pipeline запускал ansible-playbook без флагов --check --diff, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами --check --diff.
