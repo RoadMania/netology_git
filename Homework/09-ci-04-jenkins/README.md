@@ -169,3 +169,25 @@ Finished: SUCCESS
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd-jenkins6.JPG"> </div> <br>
 
 6) Внести необходимые изменения, чтобы Pipeline запускал ansible-playbook без флагов --check --diff, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами --check --diff.
+
+```
+node("linux"){
+    stage("Git checkout"){
+        git credentialsId: '1829e7da-eec6-4dfc-9465-a22c4a30691b', url: 'git@github.com:aragastmatb/example-playbook.git'
+    }
+    stage("Show prod_run"){
+        echo prod_run
+    }
+    stage("Run playbook"){
+        if (prod_run == 'True'){
+            echo " sh 'ansible-playbook site.yml -i inventory/prod.yml' "
+        }
+        else{
+            echo " sh 'ansible-playbook site.yml -i inventory/prod.yml --diff --check' "
+        }
+    }
+}
+```
+
+7) Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл ScriptedJenkinsfile.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd-jenkins7.JPG"> </div> <br>
