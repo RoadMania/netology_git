@@ -1,0 +1,17 @@
+pipeline {
+    agent {
+        label 'linux'
+    } 
+    stages {
+        stage('git pull') {
+            steps {
+                git branch: 'master', credentialsId: '5867db71-4a8e-466c-af3c-e8a4f60690a2', url: 'git@github.com:RoadMania/netology_git.git'
+            }
+        }
+        stage('molecule test') {
+            steps {
+                sh 'molecule --version'
+            }
+        }
+    }
+}
