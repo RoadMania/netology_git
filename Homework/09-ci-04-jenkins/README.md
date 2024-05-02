@@ -191,3 +191,8 @@ node("linux"){
 
 7) Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл ScriptedJenkinsfile.
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd-jenkins7.JPG"> </div> <br>
+
+8) Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
+
+- [Jenkinsfile](Jenkinsfile)
+- [ScriptedJenkinsfile](ScriptedJenkinsfile)
