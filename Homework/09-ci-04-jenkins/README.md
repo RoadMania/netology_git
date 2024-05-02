@@ -164,3 +164,8 @@ molecule 3.5.2 using python 3.6
 [Pipeline] End of Pipeline
 Finished: SUCCESS
 ```
+
+5) Создать Scripted Pipeline, наполнить его скриптом из pipeline.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cicd-jenkins6.JPG"> </div> <br>
+
+6)
