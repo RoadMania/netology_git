@@ -21,4 +21,7 @@
 Cкриншот итоговой Dashboard
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/grafana_3.JPG"> </div> <br>
 * за ночь данные изменились <br>
-* для stat и gauge панелей вкладки alerts просто нет
+* для stat и gauge панелей вкладки alerts просто нет <br>
+
+## Задание 4
+Ссылка на json: https://github.com/RoadMania/netology_git/blob/main/Homework/10-monitoring-03-grafana/json
