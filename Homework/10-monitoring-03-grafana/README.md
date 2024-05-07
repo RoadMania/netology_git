@@ -14,5 +14,11 @@
   - `node_memory_MemFree_bytes{job=~"nodeexporter"}`
 - Количество места на файловой системе
   - `node_filesystem_avail_bytes{job=~"nodeexporter",mountpoint="/",fstype!="rootfs"}` <br>
-<br> Скриншот веб-интерфейса grafana со списком подключенных Datasource.
+<br> 
 <div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/grafana_2.JPG"> </div> <br>
+
+## Задание 3
+Cкриншот итоговой Dashboard
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/grafana_3.JPG"> </div> <br>
+* за ночь данные изменились <br>
+* для stat и gauge панелей вкладки alerts просто нет
