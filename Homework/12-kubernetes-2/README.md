@@ -17,3 +17,7 @@
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_8.JPG"> </div>
 4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_9.JPG"> </div>
+
+Ссылки на манифесты: <br>
+Pod - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-2/pod.yaml <br>
+Service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-2/service.yaml
