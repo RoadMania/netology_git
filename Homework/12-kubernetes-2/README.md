@@ -14,4 +14,6 @@
 1. Создать Pod с именем netology-web.
 2. Использовать image — gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
 3. Создать Service с именем netology-svc и подключить к netology-web.
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_8.JPG"> </div>
 4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_9.JPG"> </div>
