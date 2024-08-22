@@ -10,4 +10,6 @@
 ### Задание 2. Установка и настройка локального kubectl
 1. Установить на локальную машину kubectl.
 2. Настроить локально подключение к кластеру.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_4.JPG"> </div>
 3. Подключиться к дашборду с помощью port-forward.
+<div> <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_3.JPG"> </div>
