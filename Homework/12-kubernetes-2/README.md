@@ -9,6 +9,8 @@
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_6.JPG"> </div>
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_7.JPG"> </div>
 
+------
+
 ### Задание 2. Создать Service и подключить его к Pod
 
 1. Создать Pod с именем netology-web.
