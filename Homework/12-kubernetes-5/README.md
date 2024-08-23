@@ -21,4 +21,6 @@
 1. Включить Ingress-controller в MicroK8S.
 2. Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался _frontend_ а при добавлении /api - _backend_.
 3. Продемонстрировать доступ с помощью браузера или `curl` с локального компьютера.
-4. Предоставить манифесты и скриншоты или вывод команды п.2.
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_24.JPG"> </div>
+4. Предоставить манифесты и скриншоты или вывод команды п.2. <br><br>
+Ссылка на манифест Ingress - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-5/ingress.yaml
