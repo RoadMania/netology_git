@@ -14,3 +14,9 @@
 Ссылка на манифест Deployment - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-4/deployment.yaml <br>
 Ссылка на манифест Service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-4/service.yaml <br>
 Ссылка на манифест Pod - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-4/multitool.yaml
+
+### Задание 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
+
+1. Создать отдельный Service приложения из Задания 1 с возможностью доступа снаружи кластера к nginx, используя тип NodePort.
+2. Продемонстрировать доступ с помощью браузера или `curl` с локального компьютера.
+3. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
