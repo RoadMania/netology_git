@@ -21,3 +21,4 @@
 2. Продемонстрировать доступ с помощью браузера или `curl` с локального компьютера.
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_21.JPG"> </div> 
 3. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
+Ссылка на манифест Service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-4/service-nodeport.yaml
