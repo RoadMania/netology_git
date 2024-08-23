@@ -6,7 +6,9 @@
 2. Сделать так, чтобы busybox писал каждые пять секунд в некий файл в общей директории.
 3. Обеспечить возможность чтения файла контейнером multitool.
 4. Продемонстрировать, что multitool может читать файл, который периодоически обновляется.
-5. Предоставить манифесты Deployment в решении, а также скриншоты или вывод команды из п. 4.
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_25.JPG"> </div>
+5. Предоставить манифесты Deployment в решении, а также скриншоты или вывод команды из п. 4. <br> <br>
+Ссылка на манифест Deployment - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-6/deployment.yaml
 
 ------
 
