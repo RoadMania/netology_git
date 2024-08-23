@@ -9,7 +9,7 @@
 4. Продемонстрировать, что приложения видят друг друга с помощью Service.
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_22.JPG"> </div>
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_23.JPG"> </div>
-5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4. <br>
+5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4. <br>  <br>
 Ссылка на манифест Deployment c frontend - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-5/deploy_front.yaml <br>
 Ссылка на манифест Deployment c back - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-5/deploy_back.yaml <br>
 Ссылка на манифест service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-5/service.yaml
