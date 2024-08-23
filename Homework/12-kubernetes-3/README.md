@@ -18,5 +18,7 @@
 
 1. Создать Deployment приложения nginx и обеспечить старт контейнера только после того, как будет запущен сервис этого приложения.
 2. Убедиться, что nginx не стартует. В качестве Init-контейнера взять busybox.
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_15.JPG"> </div>
 3. Создать и запустить Service. Убедиться, что Init запустился.
 4. Продемонстрировать состояние пода до и после запуска сервиса.
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_16.JPG"> </div>
