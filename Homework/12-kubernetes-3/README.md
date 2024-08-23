@@ -17,6 +17,8 @@
 Ссылка на Service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-3/service.yaml <br>
 Ссылка на multitool - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-3/multitool.yaml <br>
 
+------
+
 ### Задание 2. Создать Deployment и обеспечить старт основного контейнера при выполнении условий
 
 1. Создать Deployment приложения nginx и обеспечить старт контейнера только после того, как будет запущен сервис этого приложения.
