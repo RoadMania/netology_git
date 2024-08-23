@@ -12,7 +12,10 @@
 4. Создать Service, который обеспечит доступ до реплик приложений из п.1.
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_13.JPG"> </div>
 5. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl`, что из пода есть доступ до приложений из п.1.
-<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_14.JPG"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_14.JPG"> </div> <br>
+Ссылка на Deployment - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-3/deployment.yaml <br>
+Ссылка на Service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-3/service.yaml <br>
+Ссылка на multitool - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-3/multitool.yaml <br>
 
 ### Задание 2. Создать Deployment и обеспечить старт основного контейнера при выполнении условий
 
@@ -21,4 +24,6 @@
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_15.JPG"> </div>
 3. Создать и запустить Service. Убедиться, что Init запустился.
 4. Продемонстрировать состояние пода до и после запуска сервиса.
-<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_16.JPG"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_16.JPG"> </div> <br>
+Ссылка на Deployment - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-3/nginx-init-deploy.yaml <br>
+Ссылка на Service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-3/nginx-init-svc.yaml<br>
