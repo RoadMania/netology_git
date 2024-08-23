@@ -10,4 +10,7 @@
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_19.JPG"> </div>
 4. Продемонстрировать доступ с помощью `curl` по доменному имени сервиса.
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/kub_20.JPG"> </div>
-5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
+5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4. <br>
+Ссылка на манифест Deployment - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-4/deployment.yaml <br>
+Ссылка на манифест Service - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-4/service.yaml <br>
+Ссылка на манифест Pod - https://github.com/RoadMania/netology_git/blob/main/Homework/12-kubernetes-4/multitool.yaml
