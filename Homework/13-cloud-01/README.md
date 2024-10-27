@@ -192,6 +192,8 @@ resource "yandex_compute_instance" "public" {
   }
 }
 ```
+Проверяю доступ: <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud1.png"> </div>
 
 3. Создаём в VPC приватную подсеть с названием private, сетью 192.168.20.0/24:
 
@@ -299,3 +301,5 @@ resource "yandex_compute_instance" "private" {
   }
 }
 ```
+Проверяю доступ: <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud2.png"> </div>
