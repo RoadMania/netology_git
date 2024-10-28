@@ -38,4 +38,4 @@
 Так же была проверена доступность картинки при отключении одной или двух других машин. Как результат - картинка видна. <br>
 В конце уничтожаю все созданные резурсы командой ```terraform destroy --auto-approve``` <br>
 
-Манифесты terraform:
+Манифесты terraform: https://github.com/RoadMania/netology_git/tree/main/Homework/13-cloud-02/terraform
