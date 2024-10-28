@@ -15,7 +15,7 @@ resource "yandex_storage_object" "image-object" {
   acl        = "public-read"
   bucket     = "netologybucket"
   key        = "cicd.jpg"
-  source     = "./files/cicd.jpg"
+  source     = "/cicd.jpg"
   depends_on = [
     yandex_storage_bucket.netologybucket,
   ]
