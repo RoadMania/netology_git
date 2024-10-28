@@ -25,3 +25,17 @@
 4. (дополнительно)* Создать Application Load Balancer с использованием Instance group и проверкой состояния.
 
 ## Выполнение задания 1. Yandex Cloud
+
+Поднятая инфраструктура в Yandex Cloud:
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud3.jpg"> </div> <br>
+Хранилище: <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud6.jpg"> </div> <br>
+Балансировщик: <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud5.jpg"> </div> <br>
+Картинка из бакета: <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud4.jpg"> </div> 
+
+Так же была проверена доступность картинки при отключении одной или двух других машин. Как результат - картинка видна. <br>
+В конце уничтожаю все созданные резурсы командой ```terraform destroy --auto-approve``` <br>
+
+Манифесты terraform:
