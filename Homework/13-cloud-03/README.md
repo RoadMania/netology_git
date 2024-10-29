@@ -54,5 +54,5 @@ resource "yandex_kms_symmetric_key" "secret-key" {
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud8.jpg"> </div> <br>
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud9.jpg"> </div> <br>
 
-Во втором задании сертификат застрял в статусе Validating, так как у меня нет собственного домена. <br> Но для общего понимания всё равно его создал.
+Во второй части задании сертификат застрял в статусе Validating, так как у меня нет собственного домена. <br> Но для общего понимания всё равно его создал.
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/cloud10.jpg"> </div> <br>
