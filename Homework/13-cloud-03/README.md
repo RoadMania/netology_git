@@ -30,8 +30,8 @@ resource "yandex_resourcemanager_folder_iam_member" "sa-editor-encrypter-decrypt
 
 ```
 resource "yandex_kms_symmetric_key" "secret-key" {
-  name              = "key-1"
-  description       = "ключ для шифрования бакета"
+  name              = "netology-symetric-key"
+  description       = "netology-symetric-key"
   default_algorithm = "AES_128"
   rotation_period   = "24h"
 }
