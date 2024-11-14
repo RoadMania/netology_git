@@ -29,4 +29,12 @@ resource "yandex_storage_bucket" "tf-bucket" {
 
   force_destroy = true
 
+# Save access\secret keys locally
+provisioner "local-exec" {
+  command = "echo export AWS_ACCESS_KEY=${yandex_iam_service_account_static_access_key.terraform_service_account_key.access_key} > ../diploma/backend.tfvars"
+}
+
+provisioner "local-exec" {
+  command = "echo export AWS_SECRET_KEY=${yandex_iam_service_account_static_access_key.terraform_service_account_key.secret_key} >> ../diploma/backend.tfvars"
+}
 }
