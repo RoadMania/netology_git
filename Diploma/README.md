@@ -148,7 +148,6 @@
 и выполняю начальную инициализацию. <br>
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma1.JPG"> </div>
 <br>
-<br>
 Для работы с облаком создаём сервисный аккаунт с правами "editor" с помошью следующего кода:
 ```
 # Creat a service account for Terraform
