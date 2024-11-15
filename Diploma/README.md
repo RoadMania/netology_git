@@ -142,6 +142,7 @@
 <br>
 
 ## Выполнение дипломного практикума:
+### Создание облачной инфраструктуры
 
 Для начала разворачиваю в Yandex Cloud новое окружение и полностью его настраиваю. <br>
 Для работы с terraform создаю новую директорию "diploma". Настраиваю [providers.tf](https://github.com/RoadMania/netology_git/blob/main/Diploma/terraform-s3/providers.tf) с переменными в [variables.tf](https://github.com/RoadMania/netology_git/blob/main/Diploma/terraform-s3/variables.tf)
@@ -295,3 +296,5 @@ variable "subnet2" {
 С помощью команды `terraform destroy` уничтожаем все созданные ресурсы и убеждаемся в работающей автоматизации. 
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma7.JPG"> </div> <br>
+
+### Создание Kubernetes кластера
