@@ -48,6 +48,12 @@ resource "yandex_compute_instance" "worker" {
     }
   }
 
+  metadata = {
+    ssh-keys           = "ubuntu:${local.ssh-keys}"
+    serial-port-enable = "1"
+    user-data          = data.template_file.cloudinit.rendered
+  }
+
   network_interface {
     subnet_id          = yandex_vpc_subnet.diplom-subnet2.id
     nat                = true
