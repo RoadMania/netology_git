@@ -32,3 +32,20 @@ variable "account_name" {
   default     = "service"
   description = "VPC network&subnet name"
 }
+
+variable "exclude_ansible" {
+  type        = bool
+  default     = false
+}
+
+variable "ssh_public_key" {
+  description = "SSH public key"
+  type        = string
+  default     = "******"
+}
+
+variable "ssh_private_key" {
+  description = "SSH private key"
+  type        = string
+  default     = "******"
+}
