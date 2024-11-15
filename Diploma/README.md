@@ -199,3 +199,24 @@ provisioner "local-exec" {
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma2.JPG"> </div>
 Так же через CLI проверим, что необходимая инфраструктура создалась.
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma3.JPG"> </div>
+После создания бакета я настрою его для использования в качестве backend для Terraform:
+
+```
+terraform {
+  backend "s3" {
+    endpoint = "storage.yandexcloud.net"
+    bucket = "bogatov-diploma-bucket"
+    region = "ru-central1"
+    key = "diploma/terraform.tfstate"
+    skip_region_validation = true
+    skip_credentials_validation = true
+  }
+}
+```
+и не забываем экспортировать две созданные ранее переменные:
+
+```
+export YCA_ACCESS_KEY=*****
+export YCA_SECRET_KEY=*****
+```
+Создаю VPC с подсетями в разных зонах доступности:
