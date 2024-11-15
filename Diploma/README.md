@@ -298,3 +298,7 @@ variable "subnet2" {
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma7.JPG"> </div> <br>
 
 ### Создание Kubernetes кластера
+
+Выбрал вариант самостоятельной установки Kubernetes кластера при помощи [Kubespray](https://github.com/kubernetes-sigs/kubespray)
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma8.JPG"> </div> <br>
