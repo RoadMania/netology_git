@@ -280,3 +280,7 @@ variable "subnet2" {
   description = "subnet name"
 }
 ```
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma4.JPG"> </div> <br>
+На картинке видно, что backend с типом s3 успешно настроен. <br>
+Скрин ниже показывает, что сеть и подсети успешно создались.
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma5.JPG"> </div>
