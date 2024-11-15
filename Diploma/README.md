@@ -281,9 +281,17 @@ variable "subnet2" {
 }
 ```
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma4.JPG"> </div> <br>
+
 На картинке видно, что backend с типом s3 успешно настроен. <br>
 Скрин ниже показывает, что сеть и подсети успешно создались.
+
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma5.JPG"> </div>
+
 Для Kubernetes кластера использую один узел - Master, и два узла - Worker.
 С помощью [master.tf](https://github.com/RoadMania/netology_git/blob/main/Diploma/terraform/master.tf) и [worker.tf](https://github.com/RoadMania/netology_git/blob/main/Diploma/terraform/worker.tf) деплоим ресурсы.
+
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma6.JPG"> </div> <br>
+
+С помощью команды `terraform destroy` уничтожаем все созданные ресурсы и убеждаемся в работающей автоматизации. 
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma7.JPG"> </div> <br>
