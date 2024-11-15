@@ -147,3 +147,20 @@
 Для работы с terraform создаю новую директорию "diploma". Настраиваю providers.tf с переменными в variables.tf
 и выполняю начальную инициализацию. <br>
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma1.JPG"> </div>
+<br>
+<br>
+Для работы с облаком создаём сервисный аккаунт с правами "editor" с помошью следующего кода:
+```
+# Creat a service account for Terraform
+resource "yandex_iam_service_account" "service" {
+  folder_id = var.folder_id
+  name      = var.account_name
+}
+
+# Grant a role "editor" to created service account
+resource "yandex_resourcemanager_folder_iam_member" "service_editor" {
+  folder_id = var.folder_id
+  role      = "editor"
+  member    = "serviceAccount:${yandex_iam_service_account.service.id}"
+}
+```
