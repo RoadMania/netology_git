@@ -142,3 +142,8 @@
 <br>
 
 ## Выполнение дипломного практикума:
+
+Для начала разворачиваю в Yandex Cloud новое окружение и полностью его настраиваю. <br>
+Для работы с terraform создаю новую директорию "diploma". Настраиваю providers.tf с переменными в variables.tf
+и выполняю начальную инициализацию. <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma1.JPG"> </div>
