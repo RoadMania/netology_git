@@ -284,3 +284,5 @@ variable "subnet2" {
 На картинке видно, что backend с типом s3 успешно настроен. <br>
 Скрин ниже показывает, что сеть и подсети успешно создались.
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma5.JPG"> </div>
+
+Для Kubernetes кластера использую один узел - Master, и два узла - Worker.
