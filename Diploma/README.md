@@ -144,7 +144,7 @@
 ## Выполнение дипломного практикума:
 
 Для начала разворачиваю в Yandex Cloud новое окружение и полностью его настраиваю. <br>
-Для работы с terraform создаю новую директорию "diploma". Настраиваю providers.tf с переменными в variables.tf
+Для работы с terraform создаю новую директорию "diploma". Настраиваю [providers.tf](https://github.com/RoadMania/netology_git/blob/main/Diploma/terraform-s3/providers.tf) с переменными в [variables.tf](https://github.com/RoadMania/netology_git/blob/main/Diploma/terraform-s3/variables.tf)
 и выполняю начальную инициализацию. <br>
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma1.JPG"> </div>
 <br>
@@ -194,7 +194,7 @@ provisioner "local-exec" {
 }
 }
 ```
-Чувствительные переменные выносим в отдельный файл backend.tfvars откуда они потом будут экспортированы в оболочку рабочего окружения.
+Чувствительные переменные выносим в отдельный файл `backend.tfvars` откуда они потом будут экспортированы в оболочку рабочего окружения.
 Применяем код:
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma2.JPG"> </div>
 Так же через CLI проверим, что необходимая инфраструктура создалась.
