@@ -164,3 +164,39 @@ resource "yandex_resourcemanager_folder_iam_member" "service_editor" {
   member    = "serviceAccount:${yandex_iam_service_account.service.id}"
 }
 ```
+Создадим статический ключ доступа и S3-bucket:
+
+```
+# Create static access key for service account
+resource "yandex_iam_service_account_static_access_key" "terraform_service_account_key" {
+  service_account_id = yandex_iam_service_account.service.id
+}
+
+# Use access key to create new bucket
+resource "yandex_storage_bucket" "tf-bucket" {
+  bucket     = "bogatov-diploma-bucket"
+  access_key = yandex_iam_service_account_static_access_key.terraform_service_account_key.access_key
+  secret_key = yandex_iam_service_account_static_access_key.terraform_service_account_key.secret_key
+
+  anonymous_access_flags {
+    read = false
+    list = false
+  }
+
+  force_destroy = true
+
+# Save access\secret keys locally
+provisioner "local-exec" {
+  command = "echo export YCA_ACCESS_KEY=${yandex_iam_service_account_static_access_key.terraform_service_account_key.access_key} > ../diploma/backend.tfvars"
+}
+
+provisioner "local-exec" {
+  command = "echo export YCA_SECRET_KEY=${yandex_iam_service_account_static_access_key.terraform_service_account_key.secret_key} >> ../diploma/backend.tfvars"
+}
+}
+```
+Чувствительные переменные выносим в отдельный файл backend.tfvars откуда они потом будут экспортированы в оболочку рабочего окружения.
+Применяем код:
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma2.JPG"> </div>
+Так же через CLI проверим, что необходимая инфраструктура создалась.
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma3.JPG"> </div>
