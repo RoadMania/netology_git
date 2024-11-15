@@ -303,3 +303,5 @@ variable "subnet2" {
 Выбрал вариант самостоятельной установки Kubernetes кластера при помощи [Kubespray](https://github.com/kubernetes-sigs/kubespray)
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma8.JPG"> </div> <br>
+
+При выполнении плейбука всплыло множество ошибок, начиная от версии ansible, заканчивая ssh соединением. После исправления снова запускаю плей `sudo ansible-playbook -i inventory/mycluster/hosts.yaml -u ubuntu --become --become-user=root --private-key=~/.ssh/id_ed25519 -e 'ansible_ssh_common_args="-o StrictHostKeyChecking=no"' cluster.yml --flush-cache`
