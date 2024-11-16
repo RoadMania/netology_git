@@ -323,4 +323,16 @@ variable "subnet2" {
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma12.JPG"> </div> <br>
 
-Логинимся в DockerHub
+Логинимся в DockerHub.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma13.JPG"> </div> <br>
+
+Создаём докер образ и сразу проверяем его статус.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma14.JPG"> </div> <br>
+
+Командой `sudo docker push spencer98/netology_diploma_site:0.1` пушим образ в DockerHub и смотрим результат.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma15.JPG"> </div> <br>
+
+Ссылка на образ в DockerHub: https://hub.docker.com/r/spencer98/netology_diploma_site
