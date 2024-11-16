@@ -340,10 +340,25 @@ variable "subnet2" {
 ### Подготовка системы мониторинга и деплой приложения
 
 Для доступа к Grafana снаружи кластера Kubernetes будем использовать тип сервиса NodePort. 
-Для этого выносим его значения в файл values.yaml командой `helm show values prometheus-community/kube-prometheus-stack > helm-prometheus/values.yaml`, предварительно создав нужную директорию. 
+Для этого выносим дефолтные значения в файл values.yaml командой `helm show values prometheus-community/kube-prometheus-stack > helm-prometheus/values.yaml`, предварительно создав нужную директорию. 
 В этом файле меняем сервис и порт <br> 
 
-Используем helm и заранее готовый файл значений values.yaml выполняем установку prometheus-community <br>
-`helm upgrade --install monitoring prometheus-community/kube-prometheus-stack --create-namespace -n monitoring -f helm-prometheus/values.yaml`
+Используем helm с заранее готовым файлом значений values.yaml и выполняем установку prometheus-community <br>
 
-меняю стандартный пароль на новый
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma16.JPG"> </div> <br>
+
+Можем идти проверять результат.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma17.JPG"> </div> <br>
+
+Меняю стандартный пароль на новый. <br>
+
+Ссылка на Dashboard: http://51.250.66.59:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-15m&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s
+
+Credensials:
+ - логин: admin
+ - пароль: admin_netology
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma18.JPG"> </div> <br>
+
+Система мониторинга была успешно развернута.
