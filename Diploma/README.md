@@ -307,3 +307,6 @@ variable "subnet2" {
 При выполнении плейбука всплыло множество ошибок, начиная с версии ansible, заканчивая ssh соединением. После исправления снова запускаю плей `sudo ansible-playbook -i inventory/mycluster/hosts.yaml -u ubuntu --become --become-user=root --private-key=~/.ssh/id_ed25519 -e 'ansible_ssh_common_args="-o StrictHostKeyChecking=no"' cluster.yml --flush-cache`
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma9.JPG"> </div> <br>
+
+Не смотря на то, что плейбук выполнился без проблем, тем не менеее подключиться к машинам я не мог. Для решения проблемы создал отдельный playbook, который добавляет публичный ssh-ключ в autorized_keys таргет машин. 
+В последствии этот шаг будет имплементирован в kubespray, так что никаких дополнительный ручных действий не потребуется.
