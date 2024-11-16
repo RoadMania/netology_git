@@ -309,4 +309,6 @@ variable "subnet2" {
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma9.JPG"> </div> <br>
 
 Не смотря на то, что плейбук выполнился без проблем, тем не менеее подключиться к машинам я не мог. Для решения проблемы создал отдельный playbook, который добавляет публичный ssh-ключ в autorized_keys таргет машин. 
-В последствии этот шаг будет имплементирован в kubespray, так что никаких дополнительный ручных действий не потребуется.
+В последствии этот шаг будет имплементирован в kubespray, так что никаких дополнительный ручных действий не потребуется. Ниже видим, что подключение успешно выполнено.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma10.JPG"> </div> <br>
