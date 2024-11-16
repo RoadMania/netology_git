@@ -312,3 +312,7 @@ variable "subnet2" {
 В последствии этот шаг будет имплементирован в kubespray, так что никаких дополнительный ручных действий не потребуется. Ниже видим, что подключение успешно выполнено.
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma10.JPG"> </div> <br>
+
+На мастер ноде вводим команды `kubectl get pods --all-namespaces` и `kubectl get nodes` для отображения созданного кластера. <br> Ноды и поды находятся в состоянии ready и running.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma11.JPG"> </div> <br>
