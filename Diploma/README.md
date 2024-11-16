@@ -319,6 +319,6 @@ variable "subnet2" {
 
 ### Создание тестового приложения
 
-Создал новый [репозиторий](https://github.com/RoadMania/netology_diploma_site) для тестового приложения, где будет находиться статичная страница index.html и все необходимые для её работы файлы.
+Создал новый [репозиторий](https://github.com/RoadMania/netology_diploma_site) для тестового приложения, где будет находиться статичная страница index.html и все необходимые для его работы файлы.
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma12.JPG"> </div> <br>
