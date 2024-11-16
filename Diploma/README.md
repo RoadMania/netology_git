@@ -379,3 +379,5 @@ Credensials:
 Ссылка на манифест deployment.yaml: https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/deployment.yaml
 
 Теперь нам нужно получить доступ к web-интерфейсу. 
+
+Применяем [service.yaml](https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/service.yaml) манифест и проверим результат. 
