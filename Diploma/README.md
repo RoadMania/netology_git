@@ -362,3 +362,5 @@ Credensials:
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma18.JPG"> </div> <br>
 
 Система мониторинга была успешно развернута.
+
+Теперь разверём тестовое приложение в кластере.
