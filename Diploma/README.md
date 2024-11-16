@@ -378,3 +378,4 @@ Credensials:
 
 Ссылка на манифест deployment.yaml: https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/deployment.yaml
 
+Теперь нам нужно получить доступ к web-интерфейсу. 
