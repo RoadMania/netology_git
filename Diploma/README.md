@@ -372,4 +372,9 @@ Credensials:
 
 Применяем манифест `kubectl apply -f deployment.yaml -n diploma-site`
 
+Убеждаемся в работоспособности.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma19.JPG"> </div> <br>
+
+Ссылка на манифест deployment.yaml: https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/deployment.yaml
 
