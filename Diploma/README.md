@@ -336,3 +336,5 @@ variable "subnet2" {
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma15.JPG"> </div> <br>
 
 Ссылка на образ в DockerHub: https://hub.docker.com/r/spencer98/netology_diploma_site
+
+### Подготовка системы мониторинга и деплой приложения
