@@ -338,3 +338,12 @@ variable "subnet2" {
 Ссылка на образ в DockerHub: https://hub.docker.com/r/spencer98/netology_diploma_site
 
 ### Подготовка системы мониторинга и деплой приложения
+
+Для доступа к Grafana снаружи кластера Kubernetes будем использовать тип сервиса NodePort. 
+Для этого выносим его значения в файл values.yaml командой `helm show values prometheus-community/kube-prometheus-stack > helm-prometheus/values.yaml`, предварительно создав нужную директорию. 
+В этом файле меняем сервис и порт <br> 
+
+Используем helm и заранее готовый файл значений values.yaml выполняем установку prometheus-community <br>
+`helm upgrade --install monitoring prometheus-community/kube-prometheus-stack --create-namespace -n monitoring -f helm-prometheus/values.yaml`
+
+меняю стандартный пароль на новый
