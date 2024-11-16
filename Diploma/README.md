@@ -385,3 +385,5 @@ Credensials:
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma20.JPG"> </div> <br>
 
 Сайт загружается, приложение работает.
+
+### Установка и настройка CI/CD
