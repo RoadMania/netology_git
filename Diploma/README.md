@@ -381,3 +381,7 @@ Credensials:
 Теперь нам нужно получить доступ к web-интерфейсу. 
 
 Применяем [service.yaml](https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/service.yaml) манифест и проверим результат. 
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma20.JPG"> </div> <br>
+
+Сайт загружается, приложение работает.
