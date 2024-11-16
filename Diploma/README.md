@@ -390,4 +390,4 @@ Credensials:
 
 Для выполнения этой задачи я выбрал GitLab CI.
 
-Создаю новый репозиторий 
+Создаю новый репозиторий - https://gitlab.com/RoadMania/netology_diploma_site
