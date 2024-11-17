@@ -354,7 +354,7 @@ variable "subnet2" {
 
 Меняю стандартный пароль на новый. <br>
 
-Ссылка на Dashboard: http://51.250.66.59:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-15m&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s
+Ссылка на Dashboard: http://158.160.44.104:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s
 
 Credensials:
  - логин: admin
