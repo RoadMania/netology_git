@@ -382,7 +382,7 @@ Credensials:
 
 Применяем [service.yaml](https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/service.yaml) манифест и проверим результат. 
 
-
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma20.JPG"> </div> <br>
 
 Приложение работает по ссылке: http://158.160.40.177:30051/
 
