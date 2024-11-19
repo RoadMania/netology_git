@@ -409,5 +409,9 @@ Credensials:
 
 Сборка прошла успешно.
 
+Список изменений для наглядности. Эта информация нам понадобится для проверки следующего stage.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma25.JPG"> </div> <br>
+
 Теперь приступаем ко второму stage, который обновит приложение в kunernetes кластере.
 
