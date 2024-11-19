@@ -407,5 +407,7 @@ Credensials:
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma24.JPG"> </div> <br>
 
-Сборка прошла успешно
+Сборка прошла успешно.
+
+Теперь приступаем ко второму stage, который обновит приложение в kunernetes кластере.
 
