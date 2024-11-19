@@ -391,3 +391,21 @@ Credensials:
 Для выполнения этой задачи я выбрал GitLab CI.
 
 Создаю новый репозиторий - https://gitlab.com/RoadMania/netology_diploma_site
+
+Для начала настроим агента (Runner'а)
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma21.JPG"> </div> <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma22.JPG"> </div> <br>
+
+Инициализирую создание `.gitlab-ci.yml` пайплайна с простым дефолтными шагами для проверки его рабостоспособности и проверки агента. 
+
+Путём множественных проб и ошибок пишу шаги, которые необходимо выполнить для сборки образа и отправки его в DockerHub при изменении репозитория.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma23.JPG"> </div> <br>
+
+Так же проверим сам DockerHub: 
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma24.JPG"> </div> <br>
+
+Сборка прошла успешно
+
