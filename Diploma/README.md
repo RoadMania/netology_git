@@ -405,7 +405,7 @@ Credensials:
 
 Так же проверим сам DockerHub: 
 
-<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma24.JPG"> </div> <br>
+
 
 Сборка прошла успешно.
 
