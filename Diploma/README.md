@@ -469,3 +469,23 @@ deploy_to_kubernetes:
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma28.JPG"> </div> <br>
 
 Для справки: в начале выполнения пайплайна столкнулся с ошибкой Error: Cannot perform an interactive login from a non TTY device. Как оказалось, эта ошибка была вызвана тем, что моя локальная переменная c паролем была protected. После отключения этого параметра пайплайн с тегом прошёл без проблем. 
+
+
+### Итоги выполненной работы:
+1) Репозиторий с конфигурационными файлами Terraform: <br>
+https://github.com/RoadMania/netology_git/tree/main/Diploma/terraform-s3 <br>
+https://github.com/RoadMania/netology_git/tree/main/Diploma/terraform
+
+2) Репозиторий с конфигурацией ansible: <br>
+был использовал репозиторий Kubespray https://github.com/kubernetes-sigs/kubespray
+
+3) Репозиторий с Dockerfile тестового приложения и ссылка на собранный docker image: <br>
+https://github.com/RoadMania/netology_diploma_site <br>
+https://hub.docker.com/repository/docker/spencer98/netology-diploma-site/general
+
+4) Репозиторий с конфигурацией Kubernetes кластера: <br>
+https://github.com/RoadMania/netology_git/tree/main/Diploma/k8s_cluster
+
+5) Ссылка на тестовое приложение и веб интерфейс Grafana с данными доступа: <br>
+http://62.84.125.241:30051/ <br>
+
