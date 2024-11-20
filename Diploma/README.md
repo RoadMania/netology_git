@@ -407,7 +407,7 @@ Credensials:
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma24.JPG"> </div> <br>
 
-Сборка прошла успешно.
+Сборка прошла успешно (image получил тег latest, так как при коммите я ничего не указал)
 
 Список изменений для наглядности. Эта информация нам понадобится для проверки следующего stage.
 
