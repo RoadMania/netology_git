@@ -457,3 +457,5 @@ deploy_to_kubernetes:
 Проверим результат: 
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma26.JPG"> </div> <br>
+
+В конце попробуем внести изменения с указанием тега. 
