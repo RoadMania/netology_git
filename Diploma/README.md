@@ -459,3 +459,13 @@ deploy_to_kubernetes:
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma26.JPG"> </div> <br>
 
 В конце попробуем внести изменения с указанием тега. 
+
+С помощью git делаю небольшой фикс и с указанием тега пуляю изменения в репу. Это сразу же триггерит наш пайплайн. Как итог - успешно выполненные stages:
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma27.JPG"> </div> <br>
+
+и свежий image в DockerHub.
+
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma28.JPG"> </div> <br>
+
+Для справки: в начале выполнения пайплайна столкнулся с ошибкой Error: Cannot perform an interactive login from a non TTY device. Как оказалось, эта ошибка была вызвана тем, что моя локальная переменная c паролем была protected. После отключения этого параметра пайплайн с тегом прошёл без проблем. 
