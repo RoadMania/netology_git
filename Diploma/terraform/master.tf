@@ -33,7 +33,7 @@ variable "boot_disk_master" {
     type = string
     }))
     default = [ {
-    size = 10
+    size = 20
     type = "network-hdd"
   }]
 }
