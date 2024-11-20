@@ -401,6 +401,26 @@ Credensials:
 
 Путём множественных проб и ошибок пишу шаги, которые необходимо выполнить для сборки образа и отправки его в DockerHub при изменении репозитория.
 
+
+```
+build_image:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - if [ -n "$CI_COMMIT_TAG" ]; then export TAG=$CI_COMMIT_TAG; else export TAG=$IMAGE_TAG_LATEST; fi
+    - echo "Cloning repository..."
+    - git clone https://gitlab.com/RoadMania/netology_diploma_site.git 
+    - cd netology_diploma_site
+    - echo "Building Docker image..."
+    - docker build -t "$DOCKER_USER"/"$IMAGE_NAME":"$TAG" . 
+    - echo "Pushing Docker image to Docker Hub..."
+    - docker images
+    - docker push "$DOCKER_USER"/"$IMAGE_NAME":"$TAG"
+  ```
+  
+
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma23.JPG"> </div> <br>
 
 Так же проверим сам DockerHub: 
@@ -415,3 +435,23 @@ Credensials:
 
 Теперь приступаем ко второму stage, который обновит приложение в kunernetes кластере.
 
+```
+deploy_to_kubernetes:
+  stage: deploy
+  image:
+    name: bitnami/kubectl
+    entrypoint: [""]
+  tags:
+    - diploma
+  only:
+    - main
+    - tags
+  script:
+    - microk8s kubectl config get-contexts
+    - echo "Deploying to Kubernetes..."
+    - microk8s kubectl config use-context $KUBE_CONTEXT
+    - microk8s kubectl set image deployment/${DEPLOYMENT_NAME} ${IMAGE_NAME}=${DOCKER_USER}/${IMAGE_NAME}:529568cf --namespace=${NAMESPACE}
+    - microk8s kubectl rollout restart deployment/${DEPLOYMENT_NAME} --namespace=${NAMESPACE}\
+```
+
+Проверим результат: 
