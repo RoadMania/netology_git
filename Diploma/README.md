@@ -450,7 +450,7 @@ deploy_to_kubernetes:
     - microk8s kubectl config get-contexts
     - echo "Deploying to Kubernetes..."
     - microk8s kubectl config use-context $KUBE_CONTEXT
-    - microk8s kubectl set image deployment/${DEPLOYMENT_NAME} ${IMAGE_NAME}=${DOCKER_USER}/${IMAGE_NAME}:529568cf --namespace=${NAMESPACE}
+    - microk8s kubectl set image deployment/${DEPLOYMENT_NAME} ${IMAGE_NAME}=${DOCKER_USER}/${IMAGE_NAME}:"$TAG" --namespace=${NAMESPACE}
     - microk8s kubectl rollout restart deployment/${DEPLOYMENT_NAME} --namespace=${NAMESPACE}\
 ```
 
