@@ -488,4 +488,4 @@ https://github.com/RoadMania/netology_git/tree/main/Diploma/k8s_cluster
 
 5) Ссылка на тестовое приложение и веб интерфейс Grafana с данными доступа: <br>
 http://62.84.125.241:30051/ <br>
-http://51.250.76.35:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s
+http://51.250.76.35:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s (admin - admin_netology)
