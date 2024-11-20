@@ -342,9 +342,9 @@ variable "subnet2" {
 
 Для доступа к Grafana снаружи кластера Kubernetes будем использовать тип сервиса NodePort. 
 Для этого выносим дефолтные значения в файл values.yaml командой `helm show values prometheus-community/kube-prometheus-stack > helm-prometheus/values.yaml`, предварительно создав нужную директорию. 
-В этом файле меняем сервис и порт <br> 
+В этом файле меняем сервис и порт. <br> 
 
-Используем helm с заранее готовым файлом значений values.yaml и выполняем установку prometheus-community <br>
+Используем helm с заранее готовым файлом значений values.yaml и выполняем установку prometheus-community. <br>
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma16.JPG"> </div> <br>
 
