@@ -354,7 +354,7 @@ variable "subnet2" {
 
 Меняю стандартный пароль на новый. <br>
 
-Ссылка на Dashboard: http://51.250.76.35:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s
+Ссылка на Dashboard: http://158.160.32.244:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s
 
 Credensials:
  - логин: admin
@@ -488,4 +488,4 @@ https://github.com/RoadMania/netology_git/tree/main/Diploma/k8s_cluster
 
 5) Ссылка на тестовое приложение и веб интерфейс Grafana с данными доступа: <br>
 http://89.169.153.104:30051 <br>
-http://51.250.76.35:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s (admin - admin_netology)
+http://158.160.32.244:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s (admin - admin_netology)
