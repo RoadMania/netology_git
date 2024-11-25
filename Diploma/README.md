@@ -185,18 +185,7 @@ resource "yandex_storage_bucket" "tf-bucket" {
   }
 
   force_destroy = true
-
-# Save access\secret keys locally
-provisioner "local-exec" {
-  command = "echo export YCA_ACCESS_KEY=${yandex_iam_service_account_static_access_key.terraform_service_account_key.access_key} > ../diploma/backend.tfvars"
-}
-
-provisioner "local-exec" {
-  command = "echo export YCA_SECRET_KEY=${yandex_iam_service_account_static_access_key.terraform_service_account_key.secret_key} >> ../diploma/backend.tfvars"
-}
-}
 ```
-Чувствительные переменные выносим в отдельный файл `backend.tfvars` откуда они потом будут экспортированы в оболочку рабочего окружения.
 Применяем код:
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma2.JPG"> </div>
 Так же через CLI проверим, что необходимая инфраструктура создалась.
@@ -214,12 +203,6 @@ terraform {
     skip_credentials_validation = true
   }
 }
-```
-и не забываем экспортировать две созданные ранее переменные:
-
-```
-export YCA_ACCESS_KEY=*****
-export YCA_SECRET_KEY=*****
 ```
 Создаю VPC с подсетями в разных зонах доступности:
 
