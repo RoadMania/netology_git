@@ -7,14 +7,6 @@ data "yandex_compute_image" "ubuntu-worker" {
   family = var.os_image_worker
 }
 
-variable "subnet_ids" {
-  type    = list(string)
-  default = [
-    yandex_vpc_subnet.diplom-subnet1.id,
-    yandex_vpc_subnet.diplom-subnet2.id,
-  ]
-}
-
 variable "worker_count" {
   type    = number
   default = 2
@@ -22,18 +14,18 @@ variable "worker_count" {
 
 variable "worker_resources" {
   type = object({
-    cpu         = number
-    ram         = number
-    disk        = number
+    cpu           = number
+    ram           = number
+    disk          = number
     core_fraction = number
-    platform_id = string
+    platform_id   = string
   })
   default = {
-    cpu         = 4
-    ram         = 8
-    disk        = 10
+    cpu           = 4
+    ram           = 8
+    disk          = 10
     core_fraction = 10
-    platform_id = "standard-v1"
+    platform_id   = "standard-v1"
   }
 }
 
@@ -43,7 +35,8 @@ resource "yandex_compute_instance" "worker" {
   allow_stopping_for_update = true
   name          = "worker-${count.index + 1}"
   platform_id   = var.worker_resources.platform_id
-  zone = var.zone2
+  zone          = element([var.zone1, var.zone2], count.index % 2)
+
   resources {
     cores         = var.worker_resources.cpu
     memory        = var.worker_resources.ram
@@ -63,8 +56,11 @@ resource "yandex_compute_instance" "worker" {
   }
 
   network_interface {
-    subnet_id = var.subnet_ids[count.index]
-    nat       = true
+    subnet_id = element([
+      yandex_vpc_subnet.diplom-subnet1.id,
+      yandex_vpc_subnet.diplom-subnet2.id
+    ], count.index)
+    nat = true
   }
 
   scheduling_policy {
