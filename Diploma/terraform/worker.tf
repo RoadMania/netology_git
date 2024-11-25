@@ -7,6 +7,14 @@ data "yandex_compute_image" "ubuntu-worker" {
   family = var.os_image_worker
 }
 
+variable "subnet_ids" {
+  type    = list(string)
+  default = [
+    yandex_vpc_subnet.diplom-subnet1.id,
+    yandex_vpc_subnet.diplom-subnet2.id,
+  ]
+}
+
 variable "worker_count" {
   type    = number
   default = 2
@@ -55,8 +63,8 @@ resource "yandex_compute_instance" "worker" {
   }
 
   network_interface {
-    subnet_id          = yandex_vpc_subnet.diplom-subnet2.id
-    nat                = true
+    subnet_id = var.subnet_ids[count.index]
+    nat       = true
   }
 
   scheduling_policy {
