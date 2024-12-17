@@ -340,7 +340,7 @@ onitoring -f helm-prometheus/helm.yaml` <br>
 
 Меняю стандартный пароль на новый. <br>
 
-Ссылка на Dashboard: http://158.160.32.244:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s
+Ссылка на Dashboard: http://89.169.130.225:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?orgId=1&from=now-1h&to=now&timezone=utc&var-datasource=default&var-cluster=&refresh=10s
 
 Credensials:
  - логин: admin
@@ -370,7 +370,7 @@ Credensials:
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma20.JPG"> </div> <br>
 
-Приложение работает по ссылке: http://158.160.40.177:30051/
+Приложение работает по ссылке: http://89.169.130.225:30051/
 
 ### Установка и настройка CI/CD
 
@@ -464,5 +464,5 @@ https://hub.docker.com/repository/docker/spencer98/netology-diploma-site/general
 https://github.com/RoadMania/netology_git/tree/main/Diploma/k8s_cluster
 
 5) Ссылка на тестовое приложение и веб интерфейс Grafana с данными доступа: <br>
-http://89.169.153.104:30051 <br>
-http://158.160.32.244:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?from=now-1h&to=now&timezone=utc&var-datasource=prometheus&var-cluster=&refresh=10s (admin - admin_netology)
+http://89.169.130.225:30051 <br>
+http://89.169.130.225:30050/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster?orgId=1&from=now-1h&to=now&timezone=utc&var-datasource=default&var-cluster=&refresh=10s (admin - admin_netology)
