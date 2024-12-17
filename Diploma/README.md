@@ -293,7 +293,7 @@ variable "subnet2" {
 
 Не смотря на то, что плейбук выполнился без проблем, тем не менеее подключиться к master узлу я не мог. Для решения проблемы создал отдельный [playbook](https://github.com/RoadMania/netology_git/blob/main/Diploma/ansible/SSH_Docker_Install.yaml), который добавляет публичный ssh-ключ в autorized_keys таргет машины и вдовесок установит Docker, который пригодится для CI\CD. Ниже видим, что подключение успешно выполнено.
 
-<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma10.JPG"> </div> <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma10_1.JPG"> </div> <br>
 
 На мастер ноде вводим команды `kubectl get pods --all-namespaces` и `kubectl get nodes` для отображения созданного кластера. <br> Ноды и поды находятся в состоянии ready и running.
 
