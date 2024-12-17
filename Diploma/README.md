@@ -418,27 +418,20 @@ steps:
 
 Список изменений для наглядности. Эта информация нам понадобится для проверки следующего шага с Kubernetes.
 
-<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma25.JPG"> </div> <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma25_1.JPG"> </div> <br>
 
 Теперь приступаем ко второму stage, который обновит приложение в kunernetes кластере.
 
 ```
-deploy_to_kubernetes:
-  stage: deploy
-  image:
-    name: bitnami/kubectl
-    entrypoint: [""]
-  tags:
-    - diploma
-  only:
-    - main
-    - tags
-  script:
-    - microk8s kubectl config get-contexts
-    - echo "Deploying to Kubernetes..."
-    - microk8s kubectl config use-context $KUBE_CONTEXT
-    - microk8s kubectl set image deployment/${DEPLOYMENT_NAME} ${IMAGE_NAME}=${DOCKER_USER}/${IMAGE_NAME}:"$TAG" --namespace=${NAMESPACE}
-    - microk8s kubectl rollout restart deployment/${DEPLOYMENT_NAME} --namespace=${NAMESPACE}\
+      - name: Set up Kubernetes context
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" > kubeconfig
+          export KUBECONFIG=$(pwd)/kubeconfig
+
+      - name: Deploy to Kubernetes
+        run: |
+          sudo kubectl set image deployment/diplom-app netology-diploma-site=spencer98/netology-diploma-site:${{ env.tag }} -n diploma-site
+          sudo kubectl rollout status deployment/diplom-app -n diploma-site
 ```
 
 Проверим результат: 
