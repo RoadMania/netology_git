@@ -420,7 +420,7 @@ steps:
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma25_1.JPG"> </div> <br>
 
-Теперь приступаем ко второму stage, который обновит приложение в kunernetes кластере.
+Теперь приступаем ко второй части, где обновим приложение в kunernetes кластере.
 
 ```
       - name: Set up Kubernetes context
