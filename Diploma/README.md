@@ -332,7 +332,7 @@ variable "subnet2" {
 Используем helm с заранее готовым файлом значений [helm.yaml](https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/helm.yaml) и выполняем установку prometheus-community командой: <br> `helm upgrade --install monitoring prometheus-community/kube-prometheus-stack --create-namespace -n m
 onitoring -f helm-prometheus/helm.yaml` <br>
 
-<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma16.JPG"> </div> <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma16_1.JPG"> </div> <br>
 
 Можем идти проверять результат.
 
