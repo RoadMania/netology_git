@@ -326,11 +326,11 @@ variable "subnet2" {
 
 `helm repo add prometheus-community https://prometheus-community.github.io/helm-charts`
 
-Для этого выносим дефолтные значения в файл values.yaml командой `helm show values prometheus-community/kube-prometheus-stack > helm-prometheus/values.yaml`, предварительно создав нужную директорию. 
+Для этого выносим дефолтные значения в файл helm.yaml командой `helm show values prometheus-community/kube-prometheus-stack > helm-prometheus/helm.yaml`, предварительно создав нужную директорию. 
 В этом файле меняем сервис и порт. <br> 
 
-Используем helm с заранее готовым файлом значений values.yaml и выполняем установку prometheus-community командой: <br> `helm upgrade --install monitoring prometheus-community/kube-prometheus-stack --create-namespace -n m
-onitoring -f helm-prometheus/values.yaml` <br>
+Используем helm с заранее готовым файлом значений [helm.yaml](https://github.com/RoadMania/netology_git/blob/main/Diploma/k8s_cluster/helm.yaml) и выполняем установку prometheus-community командой: <br> `helm upgrade --install monitoring prometheus-community/kube-prometheus-stack --create-namespace -n m
+onitoring -f helm-prometheus/helm.yaml` <br>
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma16.JPG"> </div> <br>
 
