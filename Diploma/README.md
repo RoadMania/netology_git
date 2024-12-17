@@ -378,30 +378,33 @@ Credensials:
 
 Настраиваем агента (Runner). Политика github actions запрещает использование root пользователя, поэтому для пайплайна создаю нового пользователя GitHub и выдаю ему sudo права (это понадобится для Docker).
 
-<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma21.JPG"> </div> <br>
-<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma22.JPG"> </div> <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma21_1.JPG"> </div> <br>
 
-Инициализирую создание `.gitlab-ci.yml` пайплайна с простым дефолтными шагами для проверки его рабостоспособности и проверки агента. 
-
-Путём множественных проб и ошибок пишу шаги, которые необходимо выполнить для сборки образа и отправки его в DockerHub при изменении репозитория.
+В [github_actions.yml](https://github.com/RoadMania/netology_diploma_site/blob/main/.github/workflows/github_actions.yml) пишу шаги, которые необходимо выполнить для сборки образа и отправки его в DockerHub при изменении репозитория.
 
 
 ```
-build_image:
-  stage: build
-  image: docker:latest
-  services:
-    - docker:dind
-  script:
-    - if [ -n "$CI_COMMIT_TAG" ]; then export TAG=$CI_COMMIT_TAG; else export TAG=$IMAGE_TAG_LATEST; fi
-    - echo "Cloning repository..."
-    - git clone https://gitlab.com/RoadMania/netology_diploma_site.git 
-    - cd netology_diploma_site
-    - echo "Building Docker image..."
-    - docker build -t "$DOCKER_USER"/"$IMAGE_NAME":"$TAG" . 
-    - echo "Pushing Docker image to Docker Hub..."
-    - docker images
-    - docker push "$DOCKER_USER"/"$IMAGE_NAME":"$TAG"
+steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Determine Docker tag
+        id: docker_tag
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            echo "tag=latest" >> $GITHUB_ENV
+          else
+            echo "tag=${GITHUB_REF##*/}" >> $GITHUB_ENV
+          fi
+
+      - name: Build Docker image
+        run: |
+          sudo docker build . -t spencer98/netology-diploma-site:${{ env.tag }}
+
+      - name: Push Docker image
+        run: |
+          echo "${{ secrets.DOCKER_PASSWORD }}" | sudo docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+          sudo docker push spencer98/netology-diploma-site:${{ env.tag }}
   ```
   
 
