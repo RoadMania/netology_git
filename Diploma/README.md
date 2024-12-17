@@ -291,8 +291,7 @@ variable "subnet2" {
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma9_1.JPG"> </div> <br>
 
-Не смотря на то, что плейбук выполнился без проблем, тем не менеее подключиться к машинам я не мог. Для решения проблемы создал отдельный playbook, который добавляет публичный ssh-ключ в autorized_keys таргет машин. 
-В последствии этот шаг будет имплементирован в kubespray, так что никаких дополнительный ручных действий не потребуется. Ниже видим, что подключение успешно выполнено.
+Не смотря на то, что плейбук выполнился без проблем, тем не менеее подключиться к master узлу я не мог. Для решения проблемы создал отдельный [playbook](https://github.com/RoadMania/netology_git/blob/main/Diploma/ansible/SSH_Docker_Install.yaml), который добавляет публичный ssh-ключ в autorized_keys таргет машины и вдовесок установит Docker, который пригодится для CI\CD. Ниже видим, что подключение успешно выполнено.
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma10.JPG"> </div> <br>
 
@@ -374,11 +373,9 @@ Credensials:
 
 ### Установка и настройка CI/CD
 
-Для выполнения этой задачи я выбрал GitLab CI.
+Для выполнения этой задачи я выбрал GitHab Actions и созданный ранее [репозиторий](https://github.com/RoadMania/netology_diploma_site).
 
-Создаю новый репозиторий - https://gitlab.com/RoadMania/netology_diploma_site
-
-Для начала настроим агента (Runner'а)
+Настраиваем агента (Runner). Политика github actions запрещает использование root пользователя, поэтому для пайплайна создаю нового пользователя GitHub и выдаю ему sudo права (это понадобится для Docker).
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma21.JPG"> </div> <br>
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma22.JPG"> </div> <br>
