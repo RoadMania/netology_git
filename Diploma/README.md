@@ -374,7 +374,7 @@ Credensials:
 
 ### Установка и настройка CI/CD
 
-Для выполнения этой задачи я выбрал GitHab Actions и созданный ранее [репозиторий](https://github.com/RoadMania/netology_diploma_site).
+Для выполнения этой задачи я выбрал GitHub Actions и созданный ранее [репозиторий](https://github.com/RoadMania/netology_diploma_site).
 
 Настраиваем агента (Runner). Политика github actions запрещает использование root пользователя, поэтому для пайплайна создаю нового пользователя GitHub и выдаю ему sudo права (это понадобится для Docker).
 
