@@ -451,7 +451,6 @@ steps:
 
 ### Итоги выполненной работы:
 1) Репозиторий с конфигурационными файлами Terraform: <br>
-https://github.com/RoadMania/netology_git/tree/main/Diploma/terraform-s3 <br>
 https://github.com/RoadMania/netology_git/tree/main/Diploma/terraform
 
 2) Репозиторий с конфигурацией ansible: <br>
