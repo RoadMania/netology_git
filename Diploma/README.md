@@ -408,7 +408,7 @@ steps:
   ```
   
 
-<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma23.JPG"> </div> <br>
+<img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma23_1.JPG"> </div> <br>
 
 Так же проверим сам DockerHub: 
 
@@ -416,7 +416,7 @@ steps:
 
 Сборка прошла успешно (image получил тег latest, так как при коммите я ничего не указал)
 
-Список изменений для наглядности. Эта информация нам понадобится для проверки следующего stage.
+Список изменений для наглядности. Эта информация нам понадобится для проверки следующего шага с Kubernetes.
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma25.JPG"> </div> <br>
 
