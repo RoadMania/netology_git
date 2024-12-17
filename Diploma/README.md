@@ -329,7 +329,8 @@ variable "subnet2" {
 Для этого выносим дефолтные значения в файл values.yaml командой `helm show values prometheus-community/kube-prometheus-stack > helm-prometheus/values.yaml`, предварительно создав нужную директорию. 
 В этом файле меняем сервис и порт. <br> 
 
-Используем helm с заранее готовым файлом значений values.yaml и выполняем установку prometheus-community. <br>
+Используем helm с заранее готовым файлом значений values.yaml и выполняем установку prometheus-community командой: <br> `helm upgrade --install monitoring prometheus-community/kube-prometheus-stack --create-namespace -n m
+onitoring -f helm-prometheus/values.yaml` <br>
 
 <img src="https://github.com/RoadMania/netology_git/blob/main/Diploma/screens/diploma16.JPG"> </div> <br>
 
