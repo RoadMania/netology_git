@@ -19,7 +19,7 @@ variable "yandex_compute_instance_master" {
 
   default = [{
       vm_name = "master"
-      cores         = 2
+      cores         = 4
       memory        = 4
       core_fraction = 5
       count_vms = 1
@@ -33,7 +33,7 @@ variable "boot_disk_master" {
     type = string
     }))
     default = [ {
-    size = 20
+    size = 30
     type = "network-hdd"
   }]
 }
