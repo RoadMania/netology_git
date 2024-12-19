@@ -18,6 +18,6 @@
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_18.jpg"> </div>
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_19.jpg"> </div>
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_20.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_21.jpg"> </div>
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_22.jpg"> </div>
 <img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_23.jpg"> </div>
-<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_24.jpg"> </div>
