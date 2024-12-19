@@ -1,1 +1,23 @@
-
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_1.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_2.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_3.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_4.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_5.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_6.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_7.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_8.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_9.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_10.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_11.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_12.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_13.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_14.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_15.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_16.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_17.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_18.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_19.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_20.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_22.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_23.jpg"> </div>
+<img src="https://github.com/RoadMania/netology_git/blob/main/screens/Results/Results_24.jpg"> </div>
